@@ -50,7 +50,8 @@ public class Ex8_textodelimitado {
         String linea;
         //leemos y a la vez preguntamos !!! (en la misma pregunta del while ya le damos un valor !!!)
         while ((linea = bufferRead1.readLine()) != null) {
-
+            //leemos toda la línea y gracias al método split(), cada división hecha
+            //por un tabulador ocupará una posición distinta en el array !!!
             arrayDatos = linea.split("\t");
 
             productos.setCodigo(arrayDatos[0]);
